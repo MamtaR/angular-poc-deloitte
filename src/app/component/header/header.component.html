@@ -1,0 +1,27 @@
+<header>
+   
+    <div class="navbar bg-primary shadow-sm">
+        <div class="navbar-brand align-item-center d-flex">
+            <i routerLink="/" class="fas fa-shipping-fast" style="color: #fff;"> &nbsp;
+                <strong style="font-size: 30px; font-family: 'Roboto'; color: #fff;">FKart</strong>
+            </i>
+            
+            <div class="from-group">
+                <input type="text" class="form-control" placeholder="Search Products">
+            </div>
+            <span class="fas fa-search search-icon"></span>
+        </div>
+        <div class="register">
+            <ul>
+                <li class="products" routerLink="products">Products</li>
+                <li class="login" routerLink = "login">Login</li>
+                <li class="signup" routerLink = "signup">Signup</li>
+            </ul>
+        </div>
+        <button routerLink = "cart" class="btn btn-primary">
+            <i class="fas fa-cart-plus" style="font-size: 30px;"></i>
+            <div class="badge bg-danger" style="font-size: 10px;">{{totalItem}}</div>
+        </button>
+    </div>
+
+</header>
